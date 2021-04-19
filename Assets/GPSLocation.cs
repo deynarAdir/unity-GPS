@@ -38,20 +38,24 @@ public class GPSLocation : MonoBehaviour
     {
         longitud = Input.location.lastData.longitude;
         latitud = Input.location.lastData.latitude;
-        //gpsText.text = "Latitud:"+latitud + " Longitud "+ longitud;
+        // gpsText.text = "Latitud:"+latitud + " Longitud "+ longitud;
 
-        if((latitud > (-16.5922551816694-0.0050) && latitud < (-16.5922551816694+0.0050)) && (longitud > (-68.17534457988631-0.0050) && longitud < (-68.17534457988631+0.0050))){
-            // # Lugar: Churasqueria el Chaqueño
-            gpsText.text = "Latitud:"+latitud + " Longitud "+ longitud;
-        }else if((latitud > (-16.597396162846582-0.0050) && latitud < (-16.597396162846582+0.0050)) && (longitud > (-68.17279111694515-0.0050) && longitud < (-68.17279111694515+0.0050))){
-            // # Lugar: Feria de Nueva Esperanza
-            gpsText.text = "Latitud:"+latitud + " Longitud "+ longitud;
-        }else if((latitud > (-16.59221405326573-0.0050) && latitud < (-16.59221405326573+0.0050)) && (longitud > (-68.17311298202175-0.0050) && longitud < (-68.17311298202175+0.0050))){
-            // # Lugar: Mercado campesino 8 de mayo
-            gpsText.text = "Latitud:"+latitud + " Longitud "+ longitud;
+        if((latitud > (-16.5956477-0.0005) && latitud < (-16.5956477+0.0005)) && (longitud > (-68.174506-0.0005) && longitud < (-68.174506+0.0005))){
+            // # Lugar: Casa Deynar
+            gpsText.text = "Casa Deynar";
         }
-
-        gpsText.text = "No existen lugares de comida cercanos";
+        else if((latitud > (-16.5922551816694-0.0005) && latitud < (-16.5922551816694+0.0005)) && (longitud > (-68.17534457988631-0.0005) && longitud < (-68.17534457988631+0.0005))){
+            // # Lugar: Churasqueria el Chaqueño
+            gpsText.text = "Churasqueria el Chaqueño";
+        }else if((latitud > (-16.597396162846582-0.0005) && latitud < (-16.597396162846582+0.0005)) && (longitud > (-68.17279111694515-0.0005) && longitud < (-68.17279111694515+0.0005))){
+            // # Lugar: Feria de Nueva Esperanza
+            gpsText.text = "Feria de Nueva Esperanza";
+        }else if((latitud > (-16.59221405326573-0.0005) && latitud < (-16.59221405326573+0.0005)) && (longitud > (-68.17311298202175-0.0005) && longitud < (-68.17311298202175+0.0005))){
+            // # Lugar: Mercado campesino 8 de mayo
+            gpsText.text = "Mercado campesino 8 de mayo";
+        }else{
+            gpsText.text = "No existen lugares de comida cercanos";
+        }
 
 
         /*var obj = new Place
